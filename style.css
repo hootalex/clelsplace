@@ -39,15 +39,13 @@ html, body {
   vertical-align: middle;
 }
 
-span {
-  font-size: 10px;
-  color: gray;
+a {
+  transition: .2s;
 }
 
 a:link {
-    color: black;
+    color: gray;
     text-decoration: none;
-    border-bottom: none;
 }
 
 hr {
@@ -62,7 +60,6 @@ a:visited {
 a:hover {
     color: black;
     text-decoration: none;
-    border-bottom: 1px dotted black;
 }
 
 a:active {
