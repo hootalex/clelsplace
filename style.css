@@ -1,0 +1,64 @@
+@import url(https://fonts.googleapis.com/css?family=Vidaloka);
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: url(img/outside.jpg) no-repeat center center fixed;
+  background-size: cover;
+  background-color: lightgray;
+  background-blend-mode: screen;
+  font-family: Helvetica, Arial, sans-serif;
+}
+.logo {
+  margin: auto;
+  padding-bottom: 50px;
+}
+
+.logo img {
+  width: 500px;
+}
+
+.featuredimage {
+  margin: auto;
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.featuredimage img {
+  width: 300px;
+  border-radius: 50%;
+}
+
+.fulldisplay {
+  display: table-cell;
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  vertical-align: middle;
+}
+
+span {
+  font-size: 10px;
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+    border-bottom: none;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px dotted black;
+}
+
+a:active {
+    color: black;
+}
