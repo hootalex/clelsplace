@@ -1,36 +1,70 @@
 <!DOCTYPE html>
 <html>
 <link href="style.css" rel="stylesheet" type="text/css">
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script>
+$(document).ready(function(){
+	$('a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
+
+	    var target = this.hash;
+	    var $target = $(target);
+
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top
+	    }, 850, 'swing', function () {
+	        window.location.hash = target;
+	    });
+	});
+});
+$(document).scroll(function() {
+  var y = $(this).scrollTop();
+  if (y > $( window ).height()) {
+    $('.nav').fadeIn();
+  } else {
+    $('.nav').fadeOut();
+  }
+});
+</script>
 <link href="font-awesome.min.css" rel="stylesheet" type="text/css">
-<title>Clel's Place</title>
+<title>Clel's Place - Clarks Summit Hair Salon</title>
 <body>
-  <div class="fulldisplay">
-  <div class="logo"><img src="img/clelsplace.png" alt="Clel's Place"/></div>
-  <div class="featuredimage"><img src="img/profile.jpg"/>
-    <br><br>
-    120 Barrett Street &bull; Clarks Summit
+  <div class="layout">
+    <div class="each_div">
+      <div class="home">
+        <img src="img/clelsplace.png" alt="Clel's Place Hair Salon" width="400"></img>
+        <br><br>
+        <div class="featuredimage"><img src="img/profile.jpg"/></div>
+        <h3 class="address">120 Barrett Street &bull; Clarks Summit, PA</h3>
+        <h3><a href="#">Email</a> &bull; <a href="#">1-570-585-2535</a></h3>
+        <a href="#mission">Mission</a> | <a href="#hours">Hours</a> | <a href="#map">Map</a><br><br>
+        <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+   <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+   <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+   <a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+   <a href="#"><i class="fa fa-yelp" aria-hidden="true"></i></a>
+      </div>
+    </div>
+    <div class="each_div">
+      <div class="mission" id="mission">
+        <h3>Mission</h3>
+        <br>
+        <span>Our mission is to provide hair care for people.</span>
+      </div>
+    </div>
+    <div class="each_div">
+      <div class="hours" id="hours">
+        <h3>Hours</h3>
+        <br>
+        <span>Tuesday-Friday<br>10am-8pm<br><hr>Saturday<br>9am-4pm</span>
+      </div>
+    </div>
+    <div class="each_div">
+      <div class="map" id="map">
+        <iframe width="70%" height="70%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;hl=en&amp;geocode=&amp;q=120+Barrett+Street+Clarks+Summit+PA&amp;sll=41.494323,-75.70256&amp;sspn=0.006863,0.014505&amp;ie=UTF8&amp;ll=41.501635,-75.697002&amp;spn=0.013726,0.029011&amp;z=14&amp;iwloc=addr&amp;output=embed&amp;s=AARTsJqTlW8vYil3Xaecg04umgLiIBh2lw"></iframe>
+      </div>
+    </div>
   </div>
-  <br>
-  <div class="links">
-    <a href="#">Our Mission</a> |
-    <a href="#">Hours</a> |
-    <a href="#">Merchandise</a> |
-    <a href="#">Media</a> |
-    <a href="#">Photos</a> |
-    <a href="#">Videos</a> |
-    <a href="#">Map</a>
-    <br><br>
-    <a href="#">Clel</a> |
-    <a href="#">Danielle</a> |
-    <a href="#">Eli</a> |
-    1-570-585-2535
-    <br><br>
-    <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-    <a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
-    <hr>
-  </div>
-</div>
 </body>
+
 </html>
