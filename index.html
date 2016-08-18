@@ -17,27 +17,30 @@ $(document).ready(function(){
 	    });
 	});
 });
-$(document).scroll(function() {
-  var y = $(this).scrollTop();
-  if (y > $( window ).height()) {
-    $('.nav').fadeIn();
-  } else {
-    $('.nav').fadeOut();
-  }
+$(document).scroll(function(){
+		$('.bar').toggleClass('scrolled', $(this).scrollTop() > 1);
 });
 </script>
 <link href="font-awesome.min.css" rel="stylesheet" type="text/css">
 <title>Clel's Place - Clarks Summit Hair Salon</title>
 <body>
+	<div class="bar"></div>
+          <a href="#home"><img src="img/clels.png" class="logo" alt="Clel's Place Hair Salon" width="200"></img></a>
+	<div class="mainnav">
+					<p><a href="#home">Home</a></p>
+					<p><a href="#mission">Mission</a></p>
+          <p><a href="#hours">Hours</a></p>
+          <p><a href="#services">Services</a></p>
+          <p><a href="#map">Map</a></p>
+          <p><a href="#">Contact</a></p>
+      </div>
   <div class="layout">
     <div class="each_div">
-      <div class="home">
-        <img src="img/clelsplace.png" alt="Clel's Place Hair Salon" width="400"></img>
+      <div class="home" id="home">
         <br><br>
         <div class="featuredimage"><img src="img/profile.jpg"/></div>
         <h3 class="address">120 Barrett Street &bull; Clarks Summit, PA</h3>
         <h3><a href="#">Email</a> &bull; <a href="#">1-570-585-2535</a></h3>
-        <a href="#mission">Mission</a> | <a href="#hours">Hours</a> | <a href="#map">Map</a><br><br>
         <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
@@ -47,9 +50,9 @@ $(document).scroll(function() {
     </div>
     <div class="each_div">
       <div class="mission" id="mission">
-        <h3>Mission</h3>
+        <h3>Our Mission</h3>
         <br>
-        <span>Our mission is to provide hair care for people.</span>
+        <span>We are committed to providing professional services for our clients in a clean and relaxing enviornment.</span>
       </div>
     </div>
     <div class="each_div">
@@ -57,6 +60,54 @@ $(document).scroll(function() {
         <h3>Hours</h3>
         <br>
         <span>Tuesday-Friday<br>10am-8pm<br><hr>Saturday<br>9am-4pm</span>
+      </div>
+    </div>
+		<div class="each_div">
+      <div class="services" id="services">
+        <h3>Services</h3>
+        <br>
+        <div class="servicelist">
+<strong>Hair Styling</strong><br>
+Women's cut & styling $20-$40<br>
+Men's haircut & styling $18<br>
+Men's clean-up $9<br>
+Children up to 10 yrs. $12<br>
+
+<strong>Coloring</strong><br>
+One step color $48 and up<br>
+Colourshines $44 (extra bowl $10)<br>
+Corrective coloring $75 and up<br>
+Highlights with cap $60 and up<br>
+Highlights with foil $7 per foil<br>
+Lowlights with foil $7 per foil<br>
+
+<strong>Perms & Straighteners</strong><br>
+Full wave $90<br>
+Spiral wave $100<br>
+Includes consultation, innovative cut & style<br>
+
+<strong>Brides & Evening Designs</strong><br>
+Bridal consultation $50<br>
+Private bridal party $47 and up<br>
+Long hair straightening $25 and up<br>
+Design wave $60 and up<br>
+Braiding or up-do $50<br>
+Lowlights with foil $7 per foil<br>
+<hr>
+<strong>Wax Hair Removal</strong><br>
+Eyebrows $10<br>
+Upper lip $10<br>
+Cheeks $10<br>
+Chin $10<br>
+
+<strong>Manicure & Pedicure</strong><br>
+Basic manicure $12<br>
+Polish change $6<br>
+Nail design $5 and up<br>
+Pedicure $25<br>
+Pedicure with callous removal $37<br>
+	</div><br><br>
+	<span>Prices subject to change at any time without notice</span>
       </div>
     </div>
     <div class="each_div">
