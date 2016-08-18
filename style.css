@@ -203,8 +203,7 @@ a:hover {
 }
 
 .map {
-  color: white;
-  background-color: salmon;
+  background-color: lightyellow;
   width: 100vw;
   height: 100vh;
   display:table-cell;
