@@ -1,5 +1,5 @@
 @import 'https://fonts.googleapis.com/css?family=Rokkitt';
-
+@import 'https://fonts.googleapis.com/css?family=Playfair+Display:900i';
 
 html, body {
   margin: 0;
@@ -46,7 +46,7 @@ p {
 }
 
 h2 {
-  font-family: Georgia, Times, serif;
+  font-family: , Times, serif;
   font-size: 30px;
   font-weight: normal;
   font-style: italic;
@@ -197,9 +197,13 @@ a:hover {
 
 .mission span, .hours span, .contact span{
   font-size: 5vw;
-  font-family: Georgia, Times, serif;
-  font-weight: normal;
+  font-family: 'Playfair Display', Times, serif;
+  font-weight: 900;
   font-style: italic;
+}
+
+.mission span {
+  color: lightyellow;
 }
 
 .map {
